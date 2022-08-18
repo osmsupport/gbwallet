@@ -48,7 +48,13 @@ function Home() {
     <>
     <div className="_GB_Home">
       <div className="_GB_Banner_Top">
+      <ConnectionProvider endpoint={endpoint}>
+      <WalletProvider wallets={wallets} autoConnect>
+        <WalletModalProvider>
         <Header /> 
+        </WalletModalProvider>
+      </WalletProvider>
+    </ConnectionProvider>
       </div>
       <div className="_GB_About pt-4 pb-4 d-flex align-items-center">
         <div className="container">
