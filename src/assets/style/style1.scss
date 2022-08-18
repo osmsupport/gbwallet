@@ -1,0 +1,577 @@
+@import "../fonts/stylesheet.css";
+.container {
+  @media only screen and (min-width: 1600px) {
+    max-width: 1400px !important;
+  }
+}
+._GB_Banner_Top {
+  background: linear-gradient(
+    231.85deg,
+    #c80000 -37.37%,
+    rgba(200, 0, 0, 0) 23.62%
+  );
+  background-color: #000;
+}
+._GB_Home {
+  overflow: hidden;
+}
+._GB_Home_Banner {
+  height: 700px;
+}
+._SearchArea {
+  max-width: 800px;
+  background: #262627;
+  padding: 8px 10px;
+  border-radius: 25px;
+  ._GB_Enter_Player {
+    background: none;
+    border: none;
+    font-family: "Gilroy-Medium";
+    color: #ffffff;
+    opacity: 0.5;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  ._GB_Select_Game {
+    border: none;
+    outline: none;
+    font-family: "Gilroy-Medium";
+    color: #fff !important;
+    background: #262627;
+    border: none;
+  }
+  ._GB_Search_Player {
+    border: solid 2px #fff;
+    background: rgba(229, 36, 32, 0.52);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px 2px 2px 10px;
+    border-radius: 10px;
+  }
+}
+._Banner_Bottom {
+  color: #fff;
+  ._Banner_Bottom_Inner {
+    max-width: 320px;
+    margin: auto;
+    ._Icon_Each {
+      cursor: pointer;
+    }
+    .Icon_Text {
+      font-family: "Gilroy-Medium";
+      font-size: 19px;
+    }
+    ._Icon_Text_Bold {
+      font-family: "Gilroy-SemiBold";
+      font-size: 22px;
+      &.Green {
+        color: #40ab00;
+      }
+    }
+  }
+}
+._GB_About {
+  background: #000;
+  height: 300px;
+  ._GB_About_Title {
+    font-family: "Poppins-Bold";
+    color: #fff;
+    font-size: 58px;
+    line-height: 70px;
+    padding-right: 20%;
+  }
+  ._GB_About_SubTitle {
+    font-family: "Gilroy-Medium";
+    color: #fff;
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+._GB_CB_Hide {
+  display: none;
+}
+._GB_Search_List {
+  background: #262627;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 15px 10px;
+  position: absolute;
+  width: 780px;
+  ._GB_Game_Item {
+    padding: 0px 10px 10px;
+    color: #fff;
+    ._GB_Game_Item_Name {
+      color: #ffffff;
+      opacity: 0.5;
+      font-family: "Gilroy-Regular";
+      font-size: 13px;
+    }
+    ._GB_CB_PlayerName {
+      font-family: "Gilroy-Medium";
+    }
+  }
+  hr {
+    color: #fff;
+  }
+  ._GB_Mining_Seleted {
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+  }
+  ._GB_mining_Btn {
+    height: 56px;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      #6d1513 0%,
+      rgba(109, 21, 19, 0.18) 48.67%,
+      #6d1513 100.07%
+    );
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    font-family: "Poppins-SemiBold";
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 18px 50px;
+    text-decoration: none;
+    margin-left: 15px;
+    &::after {
+      content: url("../images/arrow.png");
+      padding-left: 10px;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+._GB_Common_Btn {
+  // border: solid 2px #fff;
+  // background: rgba(229, 36, 32, 0.52);
+  // border-radius: 10px;
+  // color: #fff;
+  max-width: 232px;
+  height: 56px;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    #6d1513 0%,
+    rgba(109, 21, 19, 0.18) 48.67%,
+    #6d1513 100.07%
+  );
+  border-radius: 10px;
+  border: 2px solid #ffffff;
+  font-family: "Poppins-SemiBold";
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 18px 50px;
+  text-decoration: none;
+  &::after {
+    content: url("../images/arrow.png");
+    padding-left: 10px;
+  }
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+/* Customize the label (the container) */
+._GB_CB_Name {
+  padding-left: 15px;
+}
+._GB_CB_Container {
+  height: 21px;
+  width: 21px;
+  margin: auto;
+  position: relative;
+  padding-left: 21px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+._GB_CB_Container input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  background-color: #262627;
+  border: 2px solid #5c5c5c;
+  border-radius: 3px;
+}
+
+/* On mouse-over, add a grey background color */
+._GB_CB_Container:hover input ~ .checkmark {
+  background-color: #262627;
+}
+
+/* When the checkbox is checked, add a blue background */
+._GB_CB_Container input:checked ~ .checkmark {
+  background-color: #c80000;
+  border: 2px solid #c80000;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+._GB_CB_Container:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Style the checkmark/indicator */
+._GB_CB_Container .checkmark:after {
+  content: "";
+  top: 1px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid #262627;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+/* Show the checkmark when checked */
+._GB_CB_Container input:checked ~ .checkmark:after {
+  top: 1px;
+  left: 6px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+._GB_Register {
+  background: linear-gradient(
+    231.85deg,
+    #c80000 -37.37%,
+    rgba(200, 0, 0, 0) 23.62%
+  );
+  background-color: #000;
+  @media only screen and (min-width: 1400px) {
+    height: 100vh;
+  }
+  .register_gb_logo {
+    padding: 20px;
+  }
+  .register_wrap {
+    .register_left {
+      width: 45%;
+      .register_left_inner {
+        padding: 30px 0;
+        @media only screen and (min-width: 1360px) {
+          width: 100%;
+          max-width: 450px;
+          margin: 0 auto;
+        }
+        text-align: center;
+        .register_title {
+          font-family: "Poppins-Bold";
+          font-size: 45px;
+          color: #fff;
+        }
+        .register_p {
+          font-family: "Gilroy-Regular";
+          opacity: 0.5;
+          font-size: 16px;
+          color: #fff;
+        }
+        .register_link {
+          margin-top: 15px;
+          font-family: "Gilroy-Regular";
+          font-size: 16px;
+          color: #fff;
+          a {
+            color: #fff;
+            font-family: "Gilroy-Medium";
+          }
+        }
+        .form-item-field {
+          color: #000;
+          margin: 20px 0;
+          border: 2px solid #262627;
+          height: 60px;
+          border-radius: 25px;
+          .form-field {
+            font-family: "Gilroy-Regular";
+            background: #000000 !important;
+            border: none;
+            outline: none !important;
+            color: #ffffff;
+            opacity: 0.5;
+            height: 55px;
+            line-height: 55px;
+            border-radius: 25px;
+            &:active {
+              outline: none;
+              box-shadow: none;
+            }
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+          }
+        }
+        .form-item-cbox {
+          margin: 15px 0;
+        }
+        .form-item-btn {
+          margin: 15px 0;
+        }
+        .form-field-error {
+          color: red;
+          font-size: 10px;
+          text-align: left;
+          padding-top: 5px;
+          padding-left: 10px;
+        }
+        .password_eye {
+          color: #fff;
+          font-size: 10px;
+          display: flex;
+          align-items: center;
+          padding: 10px;
+          opacity: 0.5;
+        }
+        .password_requirement {
+          color: #fff;
+          text-align: left;
+          .pass_ver_name {
+            font-size: 13px;
+            font-family: "Gilroy-Regular";
+            opacity: 0.5;
+          }
+          .pass_tick {
+            background: url("../images/pass_tick.png");
+            background-repeat: no-repeat;
+            background-position: 0px 8px;
+            padding-left: 20px;
+          }
+          .pass_untick {
+            background: url("../images/pass_untick.png");
+            background-repeat: no-repeat;
+            background-position: 0px 8px;
+            padding-left: 20px;
+          }
+        }
+        .register_check_updates {
+          color: #fff;
+          font-size: 13px;
+          font-family: "Gilroy-Regular";
+          opacity: 0.5;
+        }
+
+        ._GB_RegBtn {
+          max-width: 232px;
+          height: 56px;
+          color: #fff;
+          background: linear-gradient(
+            90deg,
+            #6d1513 0%,
+            rgba(109, 21, 19, 0.18) 48.67%,
+            #6d1513 100.07%
+          );
+          border-radius: 10px;
+          border: 2px solid #ffffff;
+          font-family: "Poppins-SemiBold";
+          font-size: 15px;
+          line-height: 17px;
+          text-transform: uppercase;
+          letter-spacing: 0.04em;
+          padding: 18px 50px;
+          text-decoration: none;
+          margin-left: 15px;
+          &::after {
+            content: url("../images/arrow.png");
+            padding-left: 10px;
+          }
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+      .register_copyright {
+        text-align: center;
+        color: #fff;
+        opacity: 0.5;
+        font-size: 13px;
+        font-family: "Gilroy-Regular";
+      }
+    }
+    .register_right {
+      width: 55%;
+      .register_right_inner {
+        padding: 30px 0;
+        text-align: center;
+        .register_image_title {
+          font-family: "Poppins-Bold";
+          font-size: 30px;
+          line-height: 38px;
+          text-align: center;
+          color: #fff;
+          @media only screen and (min-width: 1360px) {
+            width: 100%;
+            max-width: 450px;
+            margin: 10px auto;
+          }
+        }
+        .register_image_p {
+          font-family: "Gilroy-Regular";
+          font-size: 15px;
+          line-height: 25px;
+          text-align: center;
+          color: #fff;
+          opacity: 0.5;
+          @media only screen and (min-width: 1360px) {
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+.Toastify__toast-body {
+  font-family: "Gilroy-Regular";
+}
+._GB_Sync {
+  ._GB_Sync_Wrap {
+    background: linear-gradient(
+      231.85deg,
+      #c80000 -37.37%,
+      rgba(200, 0, 0, 0) 23.62%
+    );
+    background-color: #000;
+    .sync_section {
+      padding: 50px;
+      .sync_section_inner {
+        width: 100%;
+        max-width: 675px;
+        margin: auto;
+        padding: 50px 70px;
+        background: rgba(24, 24, 24, 0.5);
+        border: 2px solid #454545;
+        box-sizing: border-box;
+        border-radius: 25px;
+        .sync_title {
+          font-family: "Poppins-Bold";
+          color: #fff;
+          font-size: 40px;
+          text-align: center;
+        }
+        .sync_p {
+          font-family: "Poppins-Medium";
+          font-size: 16px;
+          color: #fff;
+          text-align: center;
+        }
+        .sync_process {
+          padding: 20px 0;
+          .sync_item {
+            background: #000000;
+            border: 1px solid #414141;
+            box-sizing: border-box;
+            border-radius: 13px;
+            padding: 22px 30px;
+            margin: 15px 0;
+            .sync_game_details {
+              .sync_game_name {
+                font-family: "Poppins-SemiBold";
+                color: #fff;
+                font-size: 20px;
+                text-transform: uppercase;
+              }
+              .sync_game_user {
+                font-family: "Gilroy-SemiBold";
+                color: #fff;
+                opacity: 0.5;
+                font-size: 20px;
+              }
+              .error_sync {
+                .errorMsg {
+                  color: #c80000;
+                  font-size: 13px;
+                  font-family: "Gilroy-Regular";
+                  margin-bottom: 10px;
+                }
+                .findSearch {
+                  color: #fff;
+                  font-size: 13px;
+                  font-family: "Gilroy-Regular";
+                  opacity: 0.7;
+                  margin-bottom: 8px;
+                }
+                .searchAgain {
+                  background: #000000;
+                  border: 2px solid #262627;
+                  box-sizing: border-box;
+                  border-radius: 10px;
+                  align-items: center;
+                  width: 220px;
+                  input {
+                    background: #000000;
+                    border: none;
+                    font-family: "Gilroy-Medium";
+                    font-size: 13px;
+                    color: #fff;
+                    opacity: 0.7;
+                    &:focus {
+                      outline: none;
+                      box-shadow: none;
+                    }
+                  }
+                  img {
+                    padding: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+._GB_Header_Nav {
+  height: 90px;
+  #_GB_MainMenu {
+    .nav-link {
+      font-family: "Gilroy-Regular";
+      cursor: pointer;
+      padding: 0 20px;
+    }
+  }
+}
+
+.mobile-only {
+  display: block;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}

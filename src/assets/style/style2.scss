@@ -1,0 +1,500 @@
+@import "../fonts/stylesheet.css";
+
+.footer {
+  background-color: #000;
+  .footer_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 0px;
+    @media only screen and(min-width: 1024px) {
+      padding: 50px 0px;
+    }
+    .col_2 {
+      @media only screen and (max-width: 1200px) {
+        width: 35%;
+      }
+      @media only screen and (max-width: 767px) {
+        width: 85%;
+      }
+      h5 {
+        font-family: "Poppins-Medium";
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        color: rgba(235, 235, 245, 0.6);
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+      .footer_menu {
+        padding-left: 0px;
+        p {
+          font-family: "Gilroy-Medium";
+          font-size: 15px;
+          max-width: 356px;
+          margin-top: 20px;
+          color: #fff;
+          line-height: 25px;
+        }
+        .menu_item {
+          list-style: none;
+          a {
+            font-family: "Poppins-Medium";
+            font-size: 15px;
+            color: #fff;
+            line-height: 28px;
+            text-decoration: none;
+          }
+        }
+      }
+      .social_icons {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        li {
+          list-style: none;
+          height: 56px;
+          min-width: 212px;
+          border: 2px solid #2d2d2d;
+          border-radius: 10px;
+          text-align: center;
+          margin-bottom: 10px;
+          padding: 6px;
+        }
+      }
+    }
+  }
+}
+
+/****************************copyright section start ************************/
+.rights_reserved {
+  background-color: #000;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #2d2d2d;
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media only screen and(max-width: 767px) {
+      flex-direction: column;
+      text-align: center;
+    }
+    .col_8 {
+      flex: 0 0 70%;
+      max-width: 70%;
+      @media only screen and(max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      p {
+        font-family: "Gilroy-Medium";
+        font-size: 15px;
+        line-height: 18px;
+        color: rgba(235, 235, 245, 0.6);
+        margin-bottom: 0 !important;
+      }
+    }
+    .col_2 {
+      flex: 0 0 15%;
+      max-width: 15%;
+      @media only screen and(max-width: 767px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      a {
+        font-family: "Gilroy-Medium";
+        font-size: 15px;
+        line-height: 18px;
+        text-decoration: none;
+        color: rgba(235, 235, 245, 0.6);
+      }
+    }
+  }
+}
+/****************************copyright section start ************************/
+
+/****************************forPlayer section start ************************/
+.for_players {
+  @media only screen and (min-width: 768px) {
+    background: url("../images/gb-mobile-screens.png");
+    background-repeat: no-repeat;
+    height: 924px;
+    background-position: right;
+    display: flex;
+    align-items: center;
+  }
+  background-color: #000 !important;
+  //   min-height: 740px;
+  //   padding: 70px 0px;
+  .forplayer-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .left {
+      //margin-left: 104px;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+      h2 {
+        font-family: "Poppins-Bold";
+        line-height: 55px;
+        font-size: 44px;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #fff;
+        font-family: "Gilroy-Medium";
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 35px;
+        max-width: 525px;
+      }
+
+      .register_btn {
+        height: 56px;
+        max-width: 456px;
+        background: linear-gradient(
+          90deg,
+          #6d1513 0%,
+          rgba(109, 21, 19, 0.18) 48.67%,
+          #6d1513 100.07%
+        );
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 12px 50px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Poppins-SemiBold";
+        font-size: 15px;
+        line-height: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        &::after {
+          content: url("../images/arrow.png");
+          padding-left: 10px;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .right {
+      padding-right: 0px;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+      img {
+        // height: 740px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/****************************forPlayers section end ************************/
+
+/****************************forStreamers section start ************************/
+.for_streamers {
+  background: linear-gradient(
+    221.85deg,
+    #c80000 -61.37%,
+    rgba(200, 0, 0, 0) 39.62%
+  );
+  background-color: #000;
+  padding: 150px 0px;
+  .forstreamers-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+    .left {
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+      img {
+        height: 493px;
+      }
+    }
+    .right {
+      padding-left: 20px;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+      }
+      h2 {
+        font-family: "Poppins-Bold";
+        line-height: 55px;
+        color: #ffffff;
+        font-size: 44px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: "Gilroy-Medium";
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff;
+        max-width: 549px;
+        padding-bottom: 50px;
+      }
+      .register_btn {
+        height: 56px;
+        max-width: 456px;
+        background: linear-gradient(
+          90deg,
+          #6d1513 0%,
+          rgba(109, 21, 19, 0.18) 48.67%,
+          #6d1513 100.07%
+        );
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 12px 50px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Poppins-SemiBold";
+        font-size: 15px;
+        line-height: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        &::after {
+          content: url("../images/arrow.png");
+          padding-left: 10px;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+/****************************for_streamers section end ************************/
+
+/****************************for_streamers section end ************************/
+.video_section {
+  padding: 100px 0px;
+  background: linear-gradient(
+    -32deg,
+    #c80000 -46.37%,
+    rgba(200, 0, 0, 0) 31.62%
+  );
+  background-color: #000;
+  .container {
+    background-image: url("../images/video.png");
+    height: 593px;
+    .video_content {
+      position: relative;
+      top: 470px;
+      left: 15px;
+      h2 {
+        font-family: "Poppins-Bold";
+        line-height: 55px;
+        color: #ffffff;
+        font-size: 44px;
+      }
+      p {
+        font-family: "Gilroy-Medium";
+        font-size: 18px;
+        line-height: 28px;
+        color: #fff;
+      }
+    }
+    &::after {
+      content: url("../images/play_button.png");
+      position: relative;
+      left: 90%;
+      top: 350px;
+      height: 109px;
+      width: 109px;
+    }
+  }
+}
+
+/****************************forStreamers section end ************************/
+
+/****************************subcribeSection section Start ************************/
+.subcribe_section {
+  background-color: #161515;
+  min-height: 218px;
+  display: flex;
+  align-items: center;
+  .left {
+    h3 {
+      font-family: "Poppins-Medium";
+      font-size: 23px;
+      color: #fff;
+    }
+    p {
+      font-family: "Gilroy-Medium";
+      font-size: 14px;
+      line-height: 25px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .subscribe_form {
+      display: flex;
+      flex-wrap: wrap;
+      input {
+        background: #000000;
+        border: 2px solid #262627;
+        border-radius: 20px;
+        max-width: 530px;
+      }
+      .subscribe_btn {
+        max-width: 232px;
+        height: 56px;
+        color: #fff;
+        background: linear-gradient(
+          90deg,
+          #6d1513 0%,
+          rgba(109, 21, 19, 0.18) 48.67%,
+          #6d1513 100.07%
+        );
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+        font-family: "Poppins-SemiBold";
+        font-size: 15px;
+        line-height: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        padding: 18px 50px;
+        text-decoration: none;
+        margin-left: 15px;
+        &::after {
+          content: url("../images/arrow.png");
+          padding-left: 10px;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .right {
+    h3 {
+      font-family: "Poppins-Medium";
+      font-size: 23px;
+      color: #fff;
+      margin-bottom: 40px;
+    }
+    img {
+      margin-right: 20px;
+    }
+    .forum {
+      color: rgba(255, 255, 255, 0.5);
+      font-family: "Gilroy-SemiBold";
+      font-size: 13px;
+      border: 1px solid #727070;
+      background: #222222;
+      border-radius: 7px;
+      text-decoration: none;
+      padding: 6px 15px;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+/****************************subcribeSection section end ************************/
+
+/****************************about section start ************************/
+._GB_About {
+  padding: 70px 0px !important;
+  .row {
+    @media only screen and(max-width: 767px) {
+      flex-direction: column;
+    }
+    .col-3 {
+      @media only screen and(max-width: 767px) {
+        width: 100%;
+      }
+      ._Title {
+        font-family: "Poppins-Bold";
+        line-height: 55px;
+        color: #ffffff;
+        font-size: 44px;
+        min-width: 470px;
+      }
+    }
+    .col-7 {
+      padding-left: 50px;
+      @media only screen and(max-width: 767px) {
+        width: 100%;
+        padding-left: 0px;
+      }
+      ._SubTitle {
+        color: #fff;
+        font-family: "Gilroy-Medium";
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 580px;
+        margin-bottom: 15px;
+      }
+      button {
+        min-width: 232px;
+        height: 56px;
+        color: #fff;
+        background: linear-gradient(
+          90deg,
+          #6d1513 0%,
+          rgba(109, 21, 19, 0.18) 48.67%,
+          #6d1513 100.07%
+        );
+        border-radius: 10px;
+        border: 2px solid #ffffff;
+        font-family: "Poppins-SemiBold";
+        font-size: 15px;
+        line-height: 17px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        padding: 15px 50px;
+        text-decoration: none;
+
+        &::after {
+          content: url("../images/arrow.png");
+          padding-left: 10px;
+        }
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+/****************************about section start ************************/
+/****************************HomeBanner start ************************/
+._GB_Home {
+  ._GB_Home_Banner {
+    color: #fff;
+    ._Title {
+      font-family: "Gilroy-Bold";
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 20px;
+      @media only screen and (min-width: 991px) {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      @media only screen and (min-width: 1366px) {
+        font-size: 65px;
+        line-height: 65px;
+      }
+    }
+    ._SubTitle {
+      font-family: "Gilroy-Medium";
+      font-size: 19px;
+      line-height: 27px;
+      @media only screen and (min-width: 1366px) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+/****************************HomeBanner end ************************/
