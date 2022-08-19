@@ -35,12 +35,9 @@ import {
   TokenAccount, TokenAmount, Token, Percent, Currency
 } from "@raydium-io/raydium-sdk";
 function Header(props) {
-  const network = WalletAdapterNetwork.Devnet;
-
-
+  const network = WalletAdapterNetwork.Mainnet; 
   // You can also provide a custom RPC endpoint.
-  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
-
+  const endpoint = useMemo(() => clusterApiUrl(network), [network]); 
   const wallets = useMemo(
     () => [
       new PhantomWalletAdapter(),
@@ -97,7 +94,7 @@ function Header(props) {
       if (!(await liquidityJsonResp).ok) return []
       const liquidityJson = await liquidityJsonResp.json();
       const allPoolKeysJson = [...(liquidityJson?.official ?? []), ...(liquidityJson?.unOfficial ?? [])]
-      setLiquidityJsons(allPoolKeysJson);
+      setLiquidityJsons(allPoolKeysJson); 
     }
     getPoolInfo();
 
@@ -325,6 +322,7 @@ function Header(props) {
     if (publicKey) {
       try {
         const owner = publicKey;
+        console.log(connection);
         const POOL_ID = "58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2"
         const poolKeys = await fetchPoolKeys(connection, new PublicKey(POOL_ID))
         const tokenAccounts = await getTokenAccounts(connection, owner)
